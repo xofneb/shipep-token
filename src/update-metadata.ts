@@ -29,22 +29,25 @@ async function main() {
 
     try {
         // Update metadata
-        const { nft } = await metaplex
+        const result = await metaplex
             .nfts()
             .update({
                 nftOrSft: {
                     address: mintAddress,
-                    mint: mintAddress,
+                    name: "ShibaPepe Coin",
+                    symbol: "SHIPEP",
+                    uri: "https://raw.githubusercontent.com/xofneb/shipep-token/main/metadata/metadata.json",
+                    sellerFeeBasisPoints: 0,
                     tokenStandard: 0, // Fungible
-                },
-                name: "ShibaPepe Coin",
-                symbol: "SHIPEP",
-                uri: "https://raw.githubusercontent.com/xofneb/shipep-token/main/metadata/metadata.json",
-                sellerFeeBasisPoints: 0,
+                    creators: [],
+                    collection: undefined,
+                    uses: undefined,
+                    programmableConfig: undefined
+                }
             });
 
         console.log('Metadata updated successfully!');
-        console.log('Metadata address:', nft.address.toString());
+        console.log('Update completed');
         
     } catch (error) {
         console.error('Error updating metadata:', error);
