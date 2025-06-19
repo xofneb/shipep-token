@@ -1,0 +1,36 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Security - Private keys and sensitive data
+**/src/*.js
+**/src/*.ts
+!**/src/index.ts
+!**/src/update-metadata.ts
+!**/src/template-create-token.js
+
+# Backup files
+*.backup
+*.bak
+
+# Temporary files
+*.tmp
+*.temp
+
+# Package lock (optional - some prefer to commit this)
+# package-lock.json
