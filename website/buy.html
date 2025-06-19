@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy SHIPEP Token</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .buy-container {
+            max-width: 600px;
+            margin: 120px auto 40px;
+            padding: 2rem;
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .buy-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-group label {
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        .form-group input {
+            padding: 0.8rem;
+            border: 1px solid var(--primary-color);
+            border-radius: 8px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-size: 1rem;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .status-message {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .status-message.success {
+            background-color: rgba(76, 175, 80, 0.1);
+            color: #4CAF50;
+        }
+
+        .status-message.error {
+            background-color: rgba(244, 67, 54, 0.1);
+            color: #F44336;
+        }
+
+        .token-info {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .token-info h2 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .token-address {
+            background-color: var(--background-color);
+            padding: 0.8rem;
+            border-radius: 8px;
+            font-family: monospace;
+            word-break: break-all;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">SHIPEP</div>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="index.html#about">ABOUT</a>
+                <a href="index.html#how-to-buy">HOW TO BUY</a>
+                <a href="index.html#tokenomics">TOKENOMICS</a>
+                <a href="index.html#roadmap">ROADMAP</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="buy-container">
+        <div class="token-info">
+            <h2>Buy SHIPEP Token</h2>
+            <p>Token Address:</p>
+            <div class="token-address">HBUgs6vyK3Vj59tD4w2u6QpUL3rTFyJwfe6TeXdkDXhd</div>
+            <p class="network-warning">⚠️ This is a test token on Solana Devnet</p>
+        </div>
+
+        <div class="buy-form">
+            <div class="form-group">
+                <button id="connectWallet" class="btn primary">Connect Wallet</button>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Amount of SHIPEP to buy:</label>
+                <input type="number" id="amount" min="1" value="1" disabled>
+            </div>
+
+            <div class="form-group">
+                <button id="buyTokens" class="btn primary" disabled>Buy Tokens</button>
+            </div>
+
+            <div id="statusMessage" class="status-message" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+    <script src="https://solflare.com/install.js"></script>
+    <script src="buy.js"></script>
+</body>
+</html> 

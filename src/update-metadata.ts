@@ -3,19 +3,25 @@ import {
     Keypair, 
     PublicKey,
     clusterApiUrl,
-    LAMPORTS_PER_SOL
+    LAMPORTS_PER_SOL,
+    Transaction,
+    SystemProgram,
+    sendAndConfirmTransaction
 } from '@solana/web3.js';
-import { Metaplex } from "@metaplex-foundation/js";
+import { 
+    TOKEN_PROGRAM_ID,
+    ASSOCIATED_TOKEN_PROGRAM_ID,
+    getAssociatedTokenAddress,
+    createAssociatedTokenAccountInstruction,
+    createMintToInstruction
+} from '@solana/spl-token';
 
 async function main() {
     // Connect to devnet
     const connection = new Connection(clusterApiUrl('devnet'), 'confirmed');
 
     // Your token mint address
-    const mintAddress = new PublicKey('HBUgs6vyK3Vj59tD4w2u6QpUL3rTFyJwfe6TeXdkDXhd');
-    
-    // Initialize Metaplex
-    const metaplex = new Metaplex(connection);
+    const mintAddress = new PublicKey('2DiLCybqbkNzkPPL63WmMknVTCSXs8Pom5ZP1SCMYupG');
     
     // The wallet that paid for the token creation (same as before)
     const payer = Keypair.generate(); // You should use the same keypair as before
@@ -28,29 +34,55 @@ async function main() {
     await connection.confirmTransaction(airdropSignature);
 
     try {
-        // Update metadata
-        const result = await metaplex
-            .nfts()
-            .update({
-                nftOrSft: {
-                    address: mintAddress,
-                    name: "ShibaPepe Coin",
-                    symbol: "SHIPEP",
-                    uri: "https://raw.githubusercontent.com/xofneb/shipep-token/main/metadata/metadata.json",
-                    sellerFeeBasisPoints: 0,
-                    tokenStandard: 0, // Fungible
-                    creators: [],
-                    collection: undefined,
-                    uses: undefined,
-                    programmableConfig: undefined
-                }
-            });
+        // Get the associated token account address
+        const associatedTokenAddress = await getAssociatedTokenAddress(
+            mintAddress,
+            payer.publicKey,
+            false,
+            TOKEN_PROGRAM_ID,
+            ASSOCIATED_TOKEN_PROGRAM_ID
+        );
 
-        console.log('Metadata updated successfully!');
-        console.log('Update completed');
+        // Create a transaction to create the associated token account and mint tokens
+        const transaction = new Transaction();
+
+        // Add instruction to create the associated token account if it doesn't exist
+        transaction.add(
+            createAssociatedTokenAccountInstruction(
+                payer.publicKey,
+                associatedTokenAddress,
+                payer.publicKey,
+                mintAddress,
+                TOKEN_PROGRAM_ID,
+                ASSOCIATED_TOKEN_PROGRAM_ID
+            )
+        );
+
+        // Add instruction to mint tokens to the associated token account
+        transaction.add(
+            createMintToInstruction(
+                mintAddress,
+                associatedTokenAddress,
+                payer.publicKey,
+                1000000000, // Amount to mint (1 token with 9 decimals)
+                [],
+                TOKEN_PROGRAM_ID
+            )
+        );
+
+        // Send and confirm the transaction
+        const signature = await sendAndConfirmTransaction(
+            connection,
+            transaction,
+            [payer]
+        );
+
+        console.log('Token minted successfully!');
+        console.log('Transaction signature:', signature);
+        console.log('Associated token account:', associatedTokenAddress.toString());
         
     } catch (error) {
-        console.error('Error updating metadata:', error);
+        console.error('Error minting token:', error);
     }
 }
 
