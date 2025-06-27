@@ -1,0 +1,37 @@
+{
+    "name": "ShibaPepe Coin",
+    "symbol": "SHIPEP",
+    "description": "The Final Boss of Meme Coins. Born to Meme. Built to Moon.",
+    "image": "https://raw.githubusercontent.com/xofneb/shipep-token/main/assets/shipep.png",
+    "external_url": "https://shipep.net",
+    "website": "https://shipep.net",
+    "attributes": [
+        {
+            "trait_type": "Category",
+            "value": "Meme Token"
+        },
+        {
+            "trait_type": "Network",
+            "value": "Solana"
+        },
+        {
+            "trait_type": "Standard",
+            "value": "SPL Token"
+        },
+        {
+            "trait_type": "Website",
+            "value": "https://shipep.net"
+        }
+    ],
+    "properties": {
+        "files": [
+            {
+                "uri": "https://raw.githubusercontent.com/xofneb/shipep-token/main/assets/shipep.png",
+                "type": "image/png"
+            }
+        ],
+        "category": "image",
+        "creators": [],
+        "website": "https://shipep.net"
+    }
+} 
