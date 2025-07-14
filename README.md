@@ -44,13 +44,9 @@ shipep-token/
 └── README.md           # This file
 ```
 
-## 🔒 Security
+## 📋 Repository Information
 
-⚠️ **Important Security Notes:**
-
-- This repository contains only public token verification files
-- No sensitive data, private keys, or development files are included
-- Safe for public access and token verification
+This repository contains only public token verification files for the SHIPEP token.
 
 ## 📈 Token Economics
 
