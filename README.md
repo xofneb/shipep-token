@@ -12,16 +12,16 @@ ShibaPepe Coin combines the playful spirit of Shiba Inu with the viral energy of
 
 - **Name:** ShibaPepe Coin
 - **Symbol:** SHIPEP
-- **Network:** Solana (Devnet)
+- **Network:** Solana (Mainnet)
 - **Supply:** 1,000,000,000 tokens (1 billion)
 - **Decimals:** 9
-- **Token Address:** `2DiLCybqbkNzkPPL63WmMknVTCSXs8Pom5ZP1SCMYupG`
+- **Token Address:** `HGx9VnjKFBiWLn1WjmuiK1ZjduXkHgJFrHGP8YMzMdvj`
 
 ## 🔗 Links
 
 - **Website:** [https://shipep.net](https://shipep.net)
-- **Solscan:** [View on Solscan](https://solscan.io/token/2DiLCybqbkNzkPPL63WmMknVTCSXs8Pom5ZP1SCMYupG)
-- **Solana Explorer:** [View on Explorer](https://explorer.solana.com/address/2DiLCybqbkNzkPPL63WmMknVTCSXs8Pom5ZP1SCMYupG?cluster=devnet)
+- **Solscan:** [View on Solscan](https://solscan.io/token/HGx9VnjKFBiWLn1WjmuiK1ZjduXkHgJFrHGP8YMzMdvj)
+- **Solana Explorer:** [View on Explorer](https://explorer.solana.com/address/HGx9VnjKFBiWLn1WjmuiK1ZjduXkHgJFrHGP8YMzMdvj)
 
 ## 🚀 Features
 
@@ -56,7 +56,7 @@ shipep-token/
 
 - **Total Supply:** 1,000,000,000 SHIPEP
 - **Circulating Supply:** 1,000,000,000 SHIPEP
-- **Network:** Solana Devnet (for testing)
+- **Network:** Solana Mainnet
 - **Token Standard:** SPL Token
 
 ## 🌐 Community
