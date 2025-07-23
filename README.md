@@ -1,4 +1,4 @@
-# ShibaPepe Coin (SHIPEP) 🐕🐸
+# ShiPep Coin (SHIPEP) 🐕🐸
 
 **The Final Boss of Meme Coins. Born to Meme. Built to Moon.**
 
@@ -6,11 +6,11 @@ A fusion of Shiba Inu and Pepe meme cultures in the crypto space, bringing toget
 
 ## 🌟 About
 
-ShibaPepe Coin combines the playful spirit of Shiba Inu with the viral energy of Pepe memes, creating a unique token that celebrates both communities. Built on Solana for fast, low-cost transactions.
+ShiPep Coin combines the playful spirit of Shiba Inu with the viral energy of Pepe memes, creating a unique token that celebrates both communities. Built on Solana for fast, low-cost transactions.
 
 ## 📊 Token Information
 
-- **Name:** ShibaPepe Coin
+- **Name:** ShiPep Coin
 - **Symbol:** SHIPEP
 - **Network:** Solana (Mainnet)
 - **Supply:** 1,000,000,000 tokens (1 billion)
@@ -57,7 +57,7 @@ This repository contains only public token verification files for the SHIPEP tok
 
 ## 🌐 Community
 
-Join the ShibaPepe community:
+Join the ShiPep Coin community:
 - **Website:** [https://shipep.net](https://shipep.net)
 - **Discord:** Coming Soon
 - **Twitter:** Coming Soon
