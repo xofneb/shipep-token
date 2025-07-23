@@ -2,7 +2,7 @@
 
 **The Final Boss of Meme Coins. Born to Meme. Built to Moon.**
 
-A fusion of Shiba Inu and Pepe meme cultures in the crypto space, bringing together two iconic communities in one token on the Solana blockchain.
+A fusion of playful meme cultures in the crypto space, bringing together internet communities in one token on the Solana blockchain.
 
 ## 🌟 About
 
