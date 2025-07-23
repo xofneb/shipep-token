@@ -6,7 +6,7 @@ A fusion of Shiba Inu and Pepe meme cultures in the crypto space, bringing toget
 
 ## 🌟 About
 
-ShiPep Coin combines the playful spirit of Shiba Inu with the viral energy of Pepe memes, creating a unique token that celebrates both communities. Built on Solana for fast, low-cost transactions.
+ShiPep Coin combines playful meme culture with viral energy, creating a unique token that celebrates internet culture and community. Built on Solana for fast, low-cost transactions.
 
 ## 📊 Token Information
 
