@@ -60,8 +60,8 @@ This repository contains only public token verification files for the SHIPEP tok
 
 Join the ShiPep Coin community:
 - **Website:** [https://shipep.net](https://shipep.net)
+- **Twitter:** [https://x.com/SHIPEPcoin](https://x.com/SHIPEPcoin)
 - **Discord:** Coming Soon
-- **Twitter:** Coming Soon
 
 ## 📄 License
 
