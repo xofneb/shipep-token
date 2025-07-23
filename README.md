@@ -51,7 +51,8 @@ This repository contains only public token verification files for the SHIPEP tok
 ## 📈 Token Economics
 
 - **Total Supply:** 1,000,000,000 SHIPEP
-- **Circulating Supply:** 1,000,000,000 SHIPEP
+- **Circulating Supply:** 30,000,000 SHIPEP (marketing distribution)
+- **Treasury:** 970,000,000 SHIPEP (for future distribution)
 - **Network:** Solana Mainnet
 - **Token Standard:** SPL Token
 
