@@ -50,24 +50,11 @@ shipep-token/
 
 This repository contains only public token verification files for the SHIPEP token.
 
-## 📈 Token Economics
-
-- **Total Supply:** 1,000,000,000 SHIPEP
-- **Circulating Supply:** 30,000,000 SHIPEP (marketing distribution)
-- **Treasury:** 970,000,000 SHIPEP (for future distribution)
-- **Network:** Solana Mainnet
-- **Token Standard:** Token-2022 Extension
-
 ## 🌐 Community
 
 Join the ShiPep Coin community:
 - **Website:** [https://shipep.net](https://shipep.net)
 - **Twitter:** [https://x.com/SHIPEPcoin](https://x.com/SHIPEPcoin)
-- **Discord:** Coming Soon
-
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ## ⚠️ Disclaimer
 
