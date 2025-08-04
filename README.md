@@ -15,19 +15,21 @@ ShiPep Coin combines playful meme culture with viral energy, creating a unique t
 - **Network:** Solana (Mainnet)
 - **Supply:** 1,000,000,000 tokens (1 billion)
 - **Decimals:** 9
-- **Token Address:** `HGx9VnjKFBiWLn1WjmuiK1ZjduXkHgJFrHGP8YMzMdvj`
+- **Token Address:** `F3nbAhgJT8k5WsCsrxLoXYmTbw5A5YoZy5hHt8rMZM86`
+- **Token Standard:** Token-2022 Extension
 
 ## 🔗 Links
 
 - **Website:** [https://shipep.net](https://shipep.net)
-- **Solscan:** [View on Solscan](https://solscan.io/token/HGx9VnjKFBiWLn1WjmuiK1ZjduXkHgJFrHGP8YMzMdvj)
-- **Solana Explorer:** [View on Explorer](https://explorer.solana.com/address/HGx9VnjKFBiWLn1WjmuiK1ZjduXkHgJFrHGP8YMzMdvj)
+- **Solscan:** [View on Solscan](https://solscan.io/token/F3nbAhgJT8k5WsCsrxLoXYmTbw5A5YoZy5hHt8rMZM86)
+- **Solana Explorer:** [View on Explorer](https://explorer.solana.com/address/F3nbAhgJT8k5WsCsrxLoXYmTbw5A5YoZy5hHt8rMZM86)
 
 ## 🚀 Features
 
 - ✅ **Verified Token** - Full metadata attached
 - ✅ **Professional Branding** - Complete with logo and description
 - ✅ **Solana Network** - Fast and efficient transactions
+- ✅ **Token-2022 Extension** - Enhanced token standard with additional features
 - ✅ **Community Driven** - Built for meme culture enthusiasts
 - ✅ **Website Integration** - Official website at shipep.net
 
@@ -54,7 +56,7 @@ This repository contains only public token verification files for the SHIPEP tok
 - **Circulating Supply:** 30,000,000 SHIPEP (marketing distribution)
 - **Treasury:** 970,000,000 SHIPEP (for future distribution)
 - **Network:** Solana Mainnet
-- **Token Standard:** SPL Token
+- **Token Standard:** Token-2022 Extension
 
 ## 🌐 Community
 
